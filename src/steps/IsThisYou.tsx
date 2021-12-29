@@ -1,4 +1,5 @@
 import {FC} from 'react';
+import CustomerSupportUrl from '../assets/customerSupport.png';
 import profilePictureUrl from '../assets/profilepic.jpeg';
 import {StepInput} from "../models/Step";
 
@@ -11,11 +12,12 @@ export const IsThisYou: FC<StepInput> = ({userInput, setUserInput}) => {
     return (
         <section>
             <header>
+                <img src={CustomerSupportUrl}/>
                 Is this you?
             </header>
             <main>
                 <div id = 'profile-details'>
-                    <img src={profilePictureUrl} />
+                    <img src={profilePictureUrl} style={{maxHeight: '100px', maxWidth: '100px'}}/>
                     {userInput.instagramUsername}
                 </div>
                 <div id = 'is-this-you-questions'>

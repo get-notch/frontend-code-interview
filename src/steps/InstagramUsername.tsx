@@ -1,4 +1,5 @@
 import {FC, FormEvent} from 'react';
+import CustomerSupportUrl from '../assets/customerSupport.png';
 import {StepInput} from "../models/Step";
 
 const INPUT_ID = "ig-username-input";
@@ -12,6 +13,7 @@ export const InstagramUsername: FC<StepInput> = ({userInput, setUserInput}) => {
     return (
         <section>
             <header>
+                <img src={CustomerSupportUrl}/>
                 What is your Instagram username?
             </header>
             <form onSubmit={submitForm}>
