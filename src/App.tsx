@@ -6,13 +6,12 @@ import {IsThisYou} from "./steps/IsThisYou";
 
 function App() {
     const [userInput, setUserInput] = useState<UserInputs>({})
-    const setPartialUserInput = (partialInput: Partial<UserInputs>) => setUserInput({...userInput, ...partialInput});
 
     return (
         <main style={{display: 'flex', flexDirection: 'column', gap: '2.5rem'}}>
-            <HackedBefore userInput={userInput} setUserInput={setPartialUserInput}/>
-            <InstagramUsername userInput={userInput} setUserInput={setPartialUserInput}/>
-            <IsThisYou userInput={userInput} setUserInput={setPartialUserInput}/>
+            <HackedBefore userInput={userInput} setUserInput={setUserInput}/>
+            <InstagramUsername userInput={userInput} setUserInput={setUserInput}/>
+            <IsThisYou userInput={userInput} setUserInput={setUserInput}/>
             Answers: {JSON.stringify(userInput)}
         </main>
     );

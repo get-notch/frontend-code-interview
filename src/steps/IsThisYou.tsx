@@ -1,6 +1,6 @@
 import {FC} from 'react';
 import profilePictureUrl from '../assets/profilepic.jpeg';
-import {StepInput} from "./Step";
+import {StepInput} from "../models/Step";
 
 const RADIO_BUTTON_GROUP = "is-this-you";
 export const IsThisYou: FC<StepInput> = ({userInput, setUserInput}) => {

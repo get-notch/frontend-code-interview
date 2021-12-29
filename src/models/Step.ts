@@ -1,4 +1,4 @@
-import {UserInputs} from "../models/UserInputs";
+import {UserInputs} from "./UserInputs";
 
 export type StepInput = {
     userInput: UserInputs,

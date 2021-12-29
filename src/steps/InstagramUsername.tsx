@@ -1,5 +1,5 @@
 import {FC, FormEvent} from 'react';
-import {StepInput} from "./Step";
+import {StepInput} from "../models/Step";
 
 const INPUT_ID = "ig-username-input";
 export const InstagramUsername: FC<StepInput> = ({userInput, setUserInput}) => {
