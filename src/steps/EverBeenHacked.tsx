@@ -15,12 +15,12 @@ export const HackedBefore: FC<StepInput> = ({userInput, setUserInput}) => {
             <main>
                 <label>
                     <input type="radio" name={RADIO_BUTTON_GROUP} onClick={() => setAnswer(true)}
-                           checked={userInput.hackedBefore}/>
+                           defaultChecked={userInput.hackedBefore}/>
                     Yes, I've been hacked before
                 </label>
                 <label>
                     <input type="radio" name={RADIO_BUTTON_GROUP} onClick={() => setAnswer(false)}
-                           checked={userInput.hackedBefore === false}/>
+                           defaultChecked={userInput.hackedBefore === false}/>
                     No, I've never been hacked
                 </label>
             </main>
