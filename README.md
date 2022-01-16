@@ -57,7 +57,7 @@ Keep in mind - there's a bug in the current code relating to changing & saving t
 After the user answers "this is me", you should display a page with the user's answers. No need for a design here, just a `JSON.stringify` is good enough.
 
 ### Part C - flow design & animation
-Refer to the [full flow video](https://www.figma.com/file/qKexQATW733R1bBvHvg342/%F0%9F%A4%96-Front-End-Code-Interview-Hand-Off) again. Implement animations to switch between the flows.
+Refer to the [full flow video](https://drive.google.com/file/d/1dafRvC-1JZ6YVN2tbp1gIMPFfVy3Lqob/view?usp=sharing) again. Implement animations to switch between the flows.
 
 ### Part D - bonus
 - Implement the mobile & tablet versions
